@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(40, 40, 40);
+}
+.container h1 {
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+  bottom: 100px;
+  animation-name: myAnimation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+  from {
+    bottom: 100px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.box {
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  height: 600px;
+  width: 500px;
+  border: 2px solid white;
+  border-radius: 25px;
+  box-shadow: 5px 5px rgb(128, 128, 128);
+}
+
+.box:hover {
+  transition: 300ms;
+  box-shadow: 8px 8px rgb(128, 128, 128);
+}
+.select-class {
+  width: 20px;
+  border: none;
+  outline: none;
+}
+.pinned-class {
+  width: 15px;
+  background-color: unset;
+  border: none;
+  outline: none;
+}
+#textField {
+  width: 400px;
+  height: 43px;
+  padding-left: 6px;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;
+}
+.todosDiv h2 {
+  margin-top: 20px;
+  padding: 8px;
+  border-bottom: 2px solid #52c356;
+  text-align: center;
+}
+.pinnedDiv h2 {
+  margin-top: 20px;
+  padding: 8px;
+  border-bottom: 2px solid #52c356;
+  text-align: center;
+}
+.completed-div h2 {
+  margin-top: 20px;
+  padding: 8px;
+  border-bottom: 2px solid #52c356;
+  text-align: center;
+}
+.userList li {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.pinnedDiv li {
+  border: none;
+}
+
+#textField:focus {
+  outline: none;
+  border: 1px solid #52c356;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 43px;
+  padding: 3px;
+  font-size: 34px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background-color: #52c356;
+  border: 1px solid #52c356;
+  border-radius: 5px;
+}
+.done-btn {
+  width: 100%;
+  height: 25px;
+  font-size: 10px;
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  background-color: #52c356;
+  border: 1px solid #52c356;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-image: linear-gradient(#52c356, #49b34d);
+}
+.li-btn {
+  border: none;
+  background-color: unset;
+  padding-left: 5px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* line-height: 36px; */
+}
+#myList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 5px;
+}
+.check-box {
+  accent-color: #3a973d;
+}
+
+.text-div {
+  width: 86%;
+  word-wrap: break-word;
+}
+
+::selection {
+  color: rgb(25, 25, 25);
+  background-color: #52c356;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 330px;
+  }
+  #textField {
+    width: 260px;
+  }
+  .btn {
+    width: 50px;
+  }
+}
